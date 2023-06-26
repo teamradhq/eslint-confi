@@ -1,12 +1,17 @@
 {
-  "name": "@trhq/eslint-config",
+  "name": "@teamrad/eslint-config",
   "version": "0.0.1",
   "description": "ESLint Configuration",
   "main": "index.js",
+  "private": false,
   "keywords": [
     "Config",
     "ESLint"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamradhq/eslint-config.git"
+  },
   "author": "Paul Beynon <info@trhq.space>",
   "license": "ISC",
   "peerDependencies": {
