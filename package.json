@@ -1,15 +1,31 @@
 {
-  "name": "@teamradhq/eslint-config",
+  "name": "@trhq/eslint-config",
   "version": "1.0.0",
   "description": "ESLint Configuration",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "Config",
     "ESLint"
   ],
   "author": "Paul Beynon <info@trhq.space>",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^8.43.0"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "eslint-plugin-cypress": "^2.13.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.15.1",
+    "prettier": "2.8.8",
+    "prettier-eslint": "^15.0.1",
+    "typescript": "5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . -c .eslintrc.js --ext .ts,.js --fix"
+  }
 }
